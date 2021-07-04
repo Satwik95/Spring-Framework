@@ -3,16 +3,19 @@
 
 <beans>
 	<bean id="triangle" class="test.Triangle">
-		<property name="pointA" ref="Point1" />
-		<property name="pointB" ref="Point2" />
-		<property name="pointC" ref="Point3" />
+		<property name="points">
+			<list>
+				<ref bean="Point1"/>
+				<ref bean="Point2"/>
+				<ref bean="Point3"/>
+			</list>
+		</property>
 	</bean>
 	
 	<bean id="Point1" class="test.Point">
 		<property name="x" value="0" />
 		<property name="y" value="0" />
-	</bean>
-
+	</bean> 
 	<bean id="Point2" class="test.Point">
 		<property name="x" value="-20" />
 		<property name="y" value="0" />

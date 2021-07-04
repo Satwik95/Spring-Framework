@@ -8,9 +8,7 @@ public class DrawingApp {
 	public static void main(String[] args) {
 		ApplicationContext con = new ClassPathXmlApplicationContext("spring.xml");
 		Triangle t = (Triangle)con.getBean("triangle");
-		t.draw();
-
-		
+		t.draw();		
 	}
 
 }
