@@ -4,6 +4,6 @@
 
 <beans>
 	<bean id="triangle" class="test.Triangle">
-		<constructor-arg value="Eq" />
+		<constructor-arg type="java.lang.String" value="Eq" />
 	</bean>
 </beans>
