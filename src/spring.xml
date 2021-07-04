@@ -3,5 +3,7 @@
 
 
 <beans>
-	<bean id="triangle" class="test.Triangle"/>
+	<bean id="triangle" class="test.Triangle">
+		<constructor-arg value="Eq" />
+	</bean>
 </beans>
